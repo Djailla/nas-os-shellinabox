@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo "{\"port\":$RAINBOW_PORT_WEB_UI, \"path\":\"$RAINBOW_WEB_PATH\"}" > /opt/shellinabox/.config
+
+# useradd admin -p mWpU5CPqOn4jQ -s /bin/bash
+
+exit 0

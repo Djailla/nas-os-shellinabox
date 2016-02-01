@@ -1,0 +1,25 @@
+#!/bin/sh -e
+#
+# rc.local
+#
+
+PIDFILE=/opt/shellinabox/pid
+
+sed -i "s/\"port\":[0-9]*/\"port\":$RAINBOW_PORT_WEB_UI/" /opt/shellinabox/.config
+
+# Create a custom user with admin/admin as credentials
+# TODO : use NAS OS admin users
+if ! grep -Fq "admin" /etc/shadow
+then
+	useradd admin -p mWpU5CPqOn4jQ -s /bin/bash
+fi
+
+case $1 in
+	start)
+		shellinaboxd -s/:LOGIN -t --no-beep --pidfile=$PIDFILE -p $RAINBOW_PORT_WEB_UI -b
+	;;
+	stop)
+		start-stop-daemon --stop --pidfile $PIDFILE
+		rm $PIDFILE
+	;;
+esac
