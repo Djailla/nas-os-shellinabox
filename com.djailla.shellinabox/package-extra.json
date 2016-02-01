@@ -3,7 +3,7 @@
         "en": "Shell In A Box"
     },
     "description_short": {
-        "en": "Shell In A Box allow you to access remote shell on a web browser."
+        "en": "Shell In A Box allow you to access remote shell on a web browser. The default account credentials are admin/admin"
     },
     "visibility": "always",
     "publisher_contact": "bastien.vallet@gmail.com",
