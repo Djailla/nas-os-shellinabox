@@ -1,18 +1,19 @@
 {
     "name": {
-        "en": "Shellinabox"
+        "en": "Shell In A Box"
     },
     "description_short": {
-        "en": "Shell in a box allow you to access remote shell on a web browser."
+        "en": "Shell In A Box allow you to access remote shell on a web browser."
     },
     "visibility": "always",
     "publisher_contact": "bastien.vallet@gmail.com",
     "categories": [
+        "productivity"
     ],
     "publication_date": "2016-01-31",
-    "publisher_name": "Djailla",
+    "publisher_name": "Djailla ",
     "supported_languages": [
         "en"
     ],
-    "website_url": "http://rg3.github.io/youtube-dl/"
+    "website_url": "https://github.com/Djailla/nas-os-shellinabox"
 }
