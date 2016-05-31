@@ -1,4 +1,5 @@
 {
+    "type": "application",
     "id": "com.djailla.shellinabox",
     "version": "1.0",
     "depends": [
