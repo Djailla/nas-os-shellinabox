@@ -1,9 +1,9 @@
 {
     "type": "application",
     "id": "com.djailla.shellinabox",
-    "version": "1.0",
+    "version": "1.0.0",
     "depends": [
-        "org.debian.wheezy-lamp-1.2"
+        "org.debian.jessie-lamp-1.0"
     ],
     "display_mode": "embedded",
     "redirect_mode": "custom",

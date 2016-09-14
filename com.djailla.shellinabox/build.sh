@@ -1,10 +1,11 @@
 #!/bin/bash
 
 mkdir -m 755 -p /opt/shellinabox/
+install -m 755 /home/source/rc.local /etc
 
 # Install dependencies
 apt-get update
-apt-get install  -y -q git libssl-dev libpam0g-dev zlib1g-dev dh-autoreconf
+apt-get install -y -q git libssl-dev libpam0g-dev zlib1g-dev dh-autoreconf
 
 # Checkout sources in /tmp
 cd /tmp
@@ -22,8 +23,9 @@ autoreconf -i
 cp /tmp/shellinabox/shellinaboxd /usr/bin
 
 # Cleanup
-rm -rf /tmp/shellinabox
+apt-get -y -q autoremove git
+apt-get -y -q clean
 
-install -m 755 /home/source/rc.local /etc
+rm -rf /tmp/shellinabox
 
 exit 0
