@@ -13,7 +13,7 @@ git clone https://github.com/shellinabox/shellinabox.git
 
 # Checkout last tag
 cd shellinabox
-git checkout tags/v2.19
+git checkout tags/v2.20
 
 # Build the component
 autoreconf -i
